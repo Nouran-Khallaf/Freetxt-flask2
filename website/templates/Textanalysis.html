@@ -1,0 +1,33 @@
+{% extends "basetwenty.html" %}
+{% block data %}
+<div class="input-container">
+    <textarea id="text-to-analyze" placeholder="Paste the text to analyze here"></textarea>
+    <button class="analyze-btn" onclick="startAnalysis()">Analyse</button>
+</div>
+
+<div class="input-container hidden" id="second-input-container">
+<div class="tab-container">
+
+    <div class="tab-buttons hidden" id="tab-buttons">
+        <button class="tab-btn" onclick="showTab(0)">📈 Data View</button>
+        <button class="tab-btn" onclick="showTab(1)">📈 Meaning analysis</button>
+        <button class="tab-btn" onclick="showTab(2)">💬 Keyword scatter</button>
+        <button class="tab-btn" onclick="showTab(3)">📝 Summarisation</button>
+        <button class="tab-btn" onclick="showTab(4)">☁️ Keyword Cloud</button>
+        <button class="tab-btn" onclick="showTab(5)">💬 Keyword in Context </button>
+        <button class="tab-btn" onclick="showTab(6)">🌳 Word Tree</button>
+        <button class="tab-btn" onclick="showTab(7)">📥 Download pdf</button>
+    </div>
+    <div id="tabs" class="hidden">
+        <div id="tab0" class="tab-content"> Content for Data View Content for Data View Content for Data View Content for Data View</div>
+        <div id="tab1" class="tab-content">Content for Meaning analysis Content for Meaning analysis Content for Meaning analysis </div>
+        <div id="tab2" class="tab-content">Content for Keyword scatter Content for Keyword scatter Content for Keyword scatter</div>
+        <div id="tab3" class="tab-content">Content for Summarisation Content for Summarisation Content for Summarisation<</div>
+        <div id="tab4" class="tab-content">Content for Keyword Cloud Content for Keyword Cloud</div>
+        <div id="tab5" class="tab-content">Content for Keyword in Context & Collocation Content for Keyword in Context & CollocationContent for Keyword in Context & Collocation</div>
+        <div id="tab6" class="tab-content">Content for Word Tree Content for Word Tree Content for Word Tree</div>
+        <div id="tab7" class="tab-content">Content for Download pdf Content for Download pdf Content for Download pdf</div>
+    </div>
+</div>
+</div>
+{% endblock %}

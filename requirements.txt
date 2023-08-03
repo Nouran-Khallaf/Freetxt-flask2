@@ -1,0 +1,7 @@
+flask==2.2.2
+Pandas
+regex
+fastText
+gensim
+requests
+flask_restful
