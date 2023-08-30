@@ -1,19 +1,140 @@
-{% extends "basetwenty.html" %}
+{% extends "template.html" %}
 {% block data %}
-<div class="input-container">
-    <div style="padding: 10px;">
-      
-      <p>FreeTxt was developed as part of an AHRC funded collaborative research project involving colleagues from Cardiff University and Lancaster University (Grant Number AH/W004844/1).</p>
-      <p>The team included:</p>
-      <ul>
-        <li>PI - Dawn Knight</li>
-        <li>CIs - Paul Rayson, Mo El-Haj</li>
-        <li>RAs - Nouran Khallaf, Ignatius Ezeani, and Steve Morris</li>
-      </ul>
-      <p>The Project Advisory Group included representatives from National Trust Wales, Cadw, National Museum Wales, CBAC | WJEC, and National Centre for Learning Welsh.</p>
-    </div>	
-  </div>
+
+     <!--<li>For further information on the FreeTxt project please contact the project team: CorCenCC@Cardiff.ac.uk</li>
+      <li>I gael mwy o wybodaeth am brosiect TestunRhydd, cysylltwch â thîm y prosiect: CorCenCC@Cardiff.ac.uk</li> -->
+ 
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   
+
+    <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+    <meta name="apple-mobile-web-app-title" content="CodePen">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+    <link rel="mask-icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg" color="#111">
+
+
+
+  
+  
+
+  <title>CodePen - Contact us page with hover effect</title>
+
+    <link rel="canonical" href="https://codepen.io/coding_dp/pen/xxwPYyq">
+  
+  
+  
+  
+<style>
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(169, 164, 164);
+  
+  font-size: 16px;
+}
+.title {
+  font-size: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.container {
+  
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.container__elem {
+  padding: 3%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex: 1 1 0px;
+}
+
+.elem__block {
+  height: 190px;
+  width: 190px;
+  background-image: linear-gradient(to right, #f05a28, #ec008c);
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.elem__block:hover {
+  background: linear-gradient(145deg, #ff4000 0, #ff0099 100%);
+}
+
+.text {
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hover-img:hover {
+  transform: scale(1.1);
+}
+
+
+
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+
+
+  <h1 class="title">CONTACT US</h1>
+    <div class="container">
+      <div class="container__elem">
+        <div class="elem__block">
+          <img class="hover-img" src="https://i.postimg.cc/XvK00tKD/call.png" width="50%">
+        </div>
+        <h1 class="text">CALL US</h1>
+        <p class="text">.................</p>
+      </div>
+      <div class="container__elem">
+        <div class="elem__block">
+          <img class="hover-img" src="https://i.postimg.cc/Fzzt3RM2/write.png" width="50%">
+        </div>
+        <h1 class="text">WRITE US</h1>
+        <p class="text">CorCenCC@Cardiff.ac.uk</p>
+      </div>
+      <div class="container__elem">
+        <div class="elem__block">
+          <img class="hover-img" src="https://i.postimg.cc/tT2QsPM3/faq.png" width="50%">
+        </div>
+        <h1 class="text">FAQ</h1>
+        <p class="text">...................</p>
+      </div>
+  
+  
+     
+
+
+
+</div></body>
+
+
+
+
+
+
+
       
 
 

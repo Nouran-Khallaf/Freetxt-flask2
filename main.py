@@ -1,7 +1,7 @@
 ##cd webtacc  
 ##. Tacc/bin/activate
 ##export FLASK_APP=main.py
-## Flask run 
+## flask run 
 #from website.logger import EpochLogger
 from website import create_app
 import gensim

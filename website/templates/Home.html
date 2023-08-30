@@ -1,17 +1,129 @@
-{% extends "basetwenty.html" %}
+{% extends "template.html" %}
 {% block data %}
-<div class="input-container">
-<p>
+<style>.content-container {
+		
+		
+    margin: 20px; /* Margin around the edges */
+    padding: 20px; /* Padding inside the div */
+    max-width: 90%; /* Maximum width of the div */
+    margin-left: auto; /* Centering the div */
+    margin-right: auto; /* Centering the div */
+}</style>
 
-	A free online text analysis and visualisation tool for English and Welsh. FreeTxt allows you to upload free-text feedback data from surveys, questionnaires etc., and to carry out quick and detailed analysis of the responses. FreeTxt will reveal common patterns of meaning in the feedback (e.g. what people are talking about/what they are saying about things), common feelings about topics being discussed (i.e. their ‘sentiment’), and can produce simple summaries of the feedback provided. FreeTxt presents the results of analyses in visually engaging and easy to interpret ways, and has been designed to allow anyone in any sector in Wales and beyond to use it.
-</p>
-				
+<div class="main-container">
+
+   <!-- Left column for the logo and description -->
+<div class="logo-column">
+	<div class="logo-wrapper">
+    <img src="static/images/logo.png" alt="Freetxt" class="page-logo">
+		</div>
+   
+        <div class="logo-description">
+
+			
+
+				<h1><strong>Discover. Analyse. Visualise.</strong></h1>
+			
+				<p class="lead">Unlock the secrets of your text data with <strong>FreeTxt</strong>.</p>
+			
+				<div class="feature">
+					<i class="icon-language"></i>
+					<p><strong>Bilingual: </strong> Crafted for both English and Welsh.</p>
+				</div>
+			
+				<div class="feature">
+					<i class="icon-upload"></i>
+					<p><strong>Instant: </strong> Upload, analyse, and extract patterns from any TEXT.</p>
+				</div>
+			
+				<div class="feature">
+					<i class="icon-heartbeat"></i>
+					<p><strong>Feel the Pulse:</strong> Understand sentiments and emotions at their core.</p>
+				</div>
+			
+				<div class="feature">
+					<i class="icon-summary"></i>
+					<p><strong>Summaries Simplified:</strong> Cut through the noise with concise reports.</p>
+				</div>
+			
+				<div class="feature">
+					<i class="icon-presentation"></i>
+					<p><strong>Visual Masterpiece:</strong> Experience data in stunning visual formats.</p>
+				</div>
+			
+				<!-- <div class="feature">
+					<i class="icon-global"></i>
+					<p><strong>For All, Everywhere:</strong> Whether in Wales or worldwide, we've got you covered.</p>
+				</div> -->
+			
+			</div>
+			
+		
 </div>
 
-<div class="input-container" style='background-color: lightgrey; padding: 10px; border-radius: 5px; color: black; font-size: 14px;'>
-	FreeTxt was developed as part of an AHRC funded collaborative FreeTxt supporting bilingual free-text 
+
+    <!-- Right column for the squares -->
+    <div class="squares-column">
+
+       <!-- Squares grid -->
+<section class="grid">
+    <a href="http://127.0.0.1:5000/fileanalysis" class="square background-red">
+        <i class="fas fa-chart-line text-size-60 text-white"></i>
+        <h3 class="text-strong text-uppercase">Meaning analysis</h3>
+        <div class="hover-content">
+            <img src="static/images/img/analysis/Meaning-analysis.png" alt="Description for the image">
+            
+        </div>
+    </a>
+    
+    <a href="http://127.0.0.1:5000/fileanalysis" class="square background-blue">
+        <i class="fas fa-comments text-size-60 text-white"></i>
+        <h3 class="text-strong text-uppercase">Sentiment Plot</h3>
+		<div class="hover-content">
+            
+            <!-- or you can add text -->
+            <p>Description</p>
+        </div>
+    </a>
+    
+    <a href="http://127.0.0.1:5000/fileanalysis" class="square background-green">
+        <i class="fas fa-file-alt text-size-60 text-white"></i>
+        <h3 class="text-strong text-uppercase">Summarisation</h3>
+    </a>
+
+    <a href="http://127.0.0.1:5000/fileanalysis" class="square background-purple">
+        <i class="fas fa-cloud text-size-60 text-white"></i>
+        <h3 class="text-strong text-uppercase">Word Cloud</h3>
+		<div class="hover-content">
+            <img src="static/images/img/analysis/word_cloud.png" alt="Description for the image">
+            
+        </div>
+    </a>
+
+	<a href="http://127.0.0.1:5000/fileanalysis" class="square background-orange">
+        <i class="fas fa-link text-size-60 text-white"></i>
+        <h3 class="text-strong text-uppercase">Word Use & Relationships</h3>
+    </a>
+
+    <a href="http://127.0.0.1:5000/fileanalysis" class="square background-aqua">
+        <i class="fas fa-tree text-size-60 text-white"></i>
+        <h3 class="text-strong text-uppercase">Word Tree</h3>
+    </a>
+</section>
+
+
+    </div>
+
+</div>
+
+
+
+
+
+   <div class="input-container" style='background-color: lightgrey; padding: 10px; border-radius: 5px; color: black; font-size: 14px;'>
+	<p>FreeTxt was developed as part of an AHRC funded collaborative FreeTxt supporting bilingual free-text 
 	survey and questionnaire data analysis research project involving colleagues from Cardiff University and 
-	Lancaster University (Grant Number AH/W004844/1).
+	Lancaster University (Grant Number AH/W004844/1).</p>
 	The team included 
 	PI - Dawn Knight; CIs - Paul Rayson, Mo El-Haj; 
 	RAs - Ignatius Ezeani, Nouran Khallaf and Steve Morris.
